@@ -2,6 +2,9 @@
 #include <vector>
 #include <assert.h> 
 
+
+// Rotates elements of A out to the right only 1 time
+
 void swappa(std::vector<int> &A){
     if (A.size() < 1)
       return;
@@ -15,7 +18,8 @@ void swappa(std::vector<int> &A){
 }
 
 
-
+// Rotates elements of A out to the right K times. 
+// As each element rotates out, it is added back to the beginning of A
 
 std::vector<int> solution(std::vector<int> &A, int K) {
     for(int i = 0; i < K; i++){
